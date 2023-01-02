@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/MyAccountForm.jsp" value="file://$PROJECT_DIR$/web/WEB-INF/jsp/account" />
+        <entry key="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/RegisterForm.jsp" value="file://$PROJECT_DIR$/web/WEB-INF/jsp/account" />
+        <entry key="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/SignonForm.jsp" value="file://$PROJECT_DIR$/web/WEB-INF/jsp/account" />
+        <entry key="file://$PROJECT_DIR$/web/WEB-INF/jsp/alipay/return_url.jsp" value="file://$PROJECT_DIR$/web/WEB-INF/jsp/alipay" />
+        <entry key="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Main.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp" value="file://$PROJECT_DIR$/web/WEB-INF/jsp/common" />
+        <entry key="file://$PROJECT_DIR$/web/WEB-INF/jsp/order/ConfirmOrder.jsp" value="file://$PROJECT_DIR$/web/WEB-INF/jsp/order" />
+        <entry key="file://$PROJECT_DIR$/web/alipay/alipay.trade.page.pay.jsp" value="file://$PROJECT_DIR$/web/alipay" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="fastjson-1.2.792">
+    <CLASSES>
+      <root url="jar://D:/Java/fastjson-1.2.79.jar!/" />
+      <root url="jar://D:/Java/jsp-api.jar!/" />
+      <root url="jar://D:/Java/jstl.jar!/" />
+      <root url="jar://D:/Java/mysql-connector-java-8.0.30.jar!/" />
+      <root url="jar://D:/Java/servlet-api.jar!/" />
+      <root url="jar://D:/Java/standard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

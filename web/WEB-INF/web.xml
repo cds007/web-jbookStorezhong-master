@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+
+
+    <!--静态展示页面-->
+    <!--
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    -->
+    
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.MainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+
+    <!--配置ViewCategoryServlet-->
+    <servlet>
+        <servlet-name>ViewCategoryServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ViewCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewCategoryServlet</servlet-name>
+        <url-pattern>/viewCategory</url-pattern>
+    </servlet-mapping>
+
+    <!--配置ViewProductServlet-->
+    <servlet>
+        <servlet-name>ViewProductServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ViewProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewProductServlet</servlet-name>
+        <url-pattern>/viewProduct</url-pattern>
+    </servlet-mapping>
+    
+    <!--配置ViewCartServlet-->
+    <servlet>
+        <servlet-name>ViewCartServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ViewCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewCartServlet</servlet-name>
+        <url-pattern>/viewCart</url-pattern>
+    </servlet-mapping>
+
+
+    <!--配置AddItemToCartServlet-->
+    <servlet>
+        <servlet-name>AddItemToCartServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.AddItemToCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddItemToCartServlet</servlet-name>
+        <url-pattern>/addItemToCart</url-pattern>
+    </servlet-mapping>
+
+    <!--更新购物车数量-->
+    <servlet>
+        <servlet-name>UpdateCartQuantitiesServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.UpdateCartQuantitiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCartQuantitiesServlet</servlet-name>
+        <url-pattern>/updateCartQuantities</url-pattern>
+    </servlet-mapping>
+
+    <!--从购物车删除-->
+    <servlet>
+        <servlet-name>RemoveItemFromCartServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.RemoveItemFromCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveItemFromCartServlet</servlet-name>
+        <url-pattern>/removeItemFromCart</url-pattern>
+    </servlet-mapping>
+
+    <!--配置ViewItemServlet-->
+    <servlet>
+        <servlet-name>ViewItemServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ViewItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewItemServlet</servlet-name>
+        <url-pattern>/viewItem</url-pattern>
+    </servlet-mapping>
+
+    <!--跳转到生成订单表-->
+    <servlet>
+        <servlet-name>NewOrderFormServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.NewOrderFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewOrderFormServlet</servlet-name>
+        <url-pattern>/newOrderForm</url-pattern>
+    </servlet-mapping>
+
+    <!--跳转到确认订单表-->
+    <servlet>
+        <servlet-name>ConfirmOrderFormServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ConfirmOrderFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfirmOrderFormServlet</servlet-name>
+        <url-pattern>/conFirmOrderForm</url-pattern>
+    </servlet-mapping>
+
+    <!--查看最终订单-->
+    <servlet>
+        <servlet-name>ViewOrderServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ViewOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewOrderServlet</servlet-name>
+        <url-pattern>/viewOrder</url-pattern>
+    </servlet-mapping>
+
+    <!--更改地址-->
+    <servlet>
+        <servlet-name>ShippingAddressServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ShippingAddressServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShippingAddressServlet</servlet-name>
+        <url-pattern>/shippingAddress</url-pattern>
+    </servlet-mapping>
+
+    <!--查看订单列表-->
+    <servlet>
+        <servlet-name>ViewListOrderServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ViewListOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewListOrderServlet</servlet-name>
+        <url-pattern>/viewListOrder</url-pattern>
+    </servlet-mapping>
+
+    <!--配置SearchServlet-->
+    <servlet>
+        <servlet-name>SearchProductServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.SearchProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchProductServlet</servlet-name>
+        <url-pattern>/searchProduct</url-pattern>
+    </servlet-mapping>
+
+
+    <!--登录界面配置-->
+    <servlet>
+        <servlet-name>SignonForm</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.SignonFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignonForm</servlet-name>
+        <url-pattern>/loginForm</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Signon</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.SignonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Signon</servlet-name>
+        <url-pattern>/signon</url-pattern>
+    </servlet-mapping>
+
+
+    <!--小写是注册界面的servlet-->
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.RegisteronFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.RegisteronServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+
+    <!--账户的servlet-->
+    <servlet>
+        <servlet-name>MyAccountForm</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.MyAccountFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyAccountForm</servlet-name>
+        <url-pattern>/MyAccountForm</url-pattern>
+    </servlet-mapping>
+    
+    <!--改变账户-->
+    <servlet>
+        <servlet-name>MyAccountExchange</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.MyAccountExchangeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyAccountExchange</servlet-name>
+        <url-pattern>/MyAccountExchange</url-pattern>
+    </servlet-mapping>
+
+    <!--登出账户-->
+    <servlet>
+        <servlet-name>SignOffServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.SignoffServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignOffServlet</servlet-name>
+        <url-pattern>/signOff</url-pattern>
+    </servlet-mapping>
+
+    <!--验证码-->
+    <servlet>
+        <servlet-name>CodeServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.CodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CodeServlet</servlet-name>
+        <url-pattern>/code</url-pattern>
+    </servlet-mapping>
+
+    <!--    模拟支付宝交易的Servlet-->
+    <!--    跳转到付款的Servlet-->
+    
+    <servlet>
+        <servlet-name>payFormServlet</servlet-name>
+        <servlet-class>com.alipay.config.alipay.servlets.payFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payFormServlet</servlet-name>
+        <url-pattern>/payForm</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AliPayTradePagePayServlet</servlet-name>
+        <servlet-class>com.alipay.config.alipay.servlets.alipayTradePagePayServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AliPayTradePagePayServlet</servlet-name>
+        <url-pattern>/AliPayTradePagePay</url-pattern>
+    </servlet-mapping>
+    
+    <!--返回页面的Servlet-->
+    <servlet>
+        <servlet-name>returnUrlServlet</servlet-name>
+        <servlet-class>com.alipay.config.alipay.servlets.returnUrlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>returnUrlServlet</servlet-name>
+        <url-pattern>/returnUrl</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!--服务器异步通知页面路径-->
+    <servlet>
+        <servlet-name>notifyUrlServlet</servlet-name>
+        <servlet-class>com.alipay.config.alipay.servlets.notifyUrlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>notifyUrlServlet</servlet-name>
+        <url-pattern>/notifyUrl</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateCartJSServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.UpdateCartJSServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCartJSServlet</servlet-name>
+        <url-pattern>/updateCartJSServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>shippingAddressChange</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ShippingAddressChangeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shippingAddressChange</servlet-name>
+        <url-pattern>/shippingAddressChange</url-pattern>
+    </servlet-mapping>
+
+    <!--查询商品展示-->
+    <servlet>
+        <servlet-name>FindProductServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.FindProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindProductServlet</servlet-name>
+        <url-pattern>/findProduct</url-pattern>
+    </servlet-mapping>
+    <!--商品展示-->
+    <servlet>
+        <servlet-name>ItemDetailServlet</servlet-name>
+        <servlet-class>org.csu.webJpetStore.web.servlets.ItemDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemDetailServlet</servlet-name>
+        <url-pattern>/ItemDetailServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
+
